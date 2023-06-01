@@ -48,3 +48,12 @@ def gerador(a = 1):
     for i in lista:
         fim += i
     return fim
+
+def linha(a = 0):
+    print(f"\033[1;{a}m-=\033[m" * 20)
+def cabeçalho(a = "TEXTO"):
+    print(f"\033[1m{a.center(40)}\033[m")
+def texto(a = "TEXTO"):
+    linha(32)
+    cabeçalho(a)
+    linha(33)
